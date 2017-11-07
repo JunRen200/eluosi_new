@@ -1,0 +1,60 @@
+.pppppp{
+    width: 950px;
+
+    margin-bottom: 0px;
+}
+.pppppp .square:nth-child(2){
+    margin-left:150px;
+}
+.square{
+    margin-top: 100px;
+    margin-bottom: 0px;
+    width: 400px;
+    height: 500px;
+    float: left;
+}
+
+.title{
+    font-size: 30px;
+    margin: 20px auto;
+
+}
+.game{
+    width: 200px;
+    height: 400px;
+    background: #a1a0fe;
+    position: relative;
+    float: left;
+}
+.next{
+    position: relative;
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-left: 40px;
+    background: #a1a0fe;
+}
+.info{
+    float: left;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.none,.current,.done{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.none{
+    background-color: #a1a0fe;
+}
+.current{
+    background-color: #eaa142;
+    border: 1px solid #fffc05;
+}
+.done{
+    background-color: #fbb312;
+    border: 1px solid #fffacd;
+}

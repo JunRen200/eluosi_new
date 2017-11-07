@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qjr.eluosi.dao.UserDao">
+
+	<resultMap type="com.qjr.eluosi.pojo.User" id="user">
+		<id column="user_id" property="userId"/>
+		<collection property="fightList" column="user_id" select="com.qjr.eluosi.dao.FightInfoDao.findFightInfoByUserid" />
+	</resultMap>
+	
+	<select id="loginUser" parameterType="user" resultType="user">
+		select
+		user_id,
+		user_name
+		from
+		user
+		where
+		binary user_name=#{userName} and binary
+		password=#{password}
+	</select>
+
+	<select id="findUsers" resultType="user">
+		select id ,user_name,password
+		from
+		user
+	</select>
+
+	<insert id="inserUser" parameterType="user">
+		<selectKey keyProperty="userId" resultType="java.lang.String"
+			order="BEFORE">
+			select replace(uuid(),'-','') from dual
+		</selectKey>
+		insert into user(user_id,user_name,password) values( #{userId},
+		#{userName},#{password})
+	</insert>
+
+
+	<select id="findUsersByIntegral" resultType="nameAndIntegral">
+		select
+		user_name,integral
+		from
+		user order by integral DESC
+	</select>
+
+	<select id="findUsersByTimes" resultType="nameAndTimes">
+		select user_name,times
+		from
+		user order by times DESC
+	</select>
+
+	<select id="findUserByName" resultType="user">
+		select user_id ,
+		user_name, integral, times, win_times, defeated_times
+		from
+		user where user_name=#{userName}
+	</select>
+	<select id="findIdByName" resultType="java.lang.String">
+		select user_id
+		from
+		user where user_name=#{userName}
+	</select>
+
+	<update id="victoryUserByName">
+		update user set times=times+1 , win_times=win_times+1
+		,integral=integral+100
+		where
+		user_name=#{userName}
+	</update>
+
+	<update id="defeatedByName">
+		update user set times=times+1
+		,defeated_times=defeated_times+1
+		where
+		user_name=#{userName}
+	</update>
+
+	<select id="findFightInfos" resultMap="user">
+		select
+			user_id
+		from
+			user
+		where
+			binary user_name=#{userName}
+	</select>
+	<select id="updatePassword">
+		update user set password=#{password} where user_name=#{userName}
+	</select>
+</mapper>

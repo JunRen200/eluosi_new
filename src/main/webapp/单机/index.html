@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>俄罗斯方块</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url("../img/yun.png"),url("../img/logo.png");
+            background-color:#eaeaf1;
+            background-repeat:repeat-x,no-repeat;
+            background-position:bottom,top center;
+            font-family:"幼圆";
+            color: #765e38;
+            font-weight: bold;
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<div class="square" id="local">
+    <div class="title">单机游戏</div>
+    <div class="game" id="local_game"></div>
+    <div class="next" id="local_next"></div>
+    <div class="info" >
+        <div>已用时：<span id="local_time">0</span>s</div>
+        <div>已得分：<span id="local_score">0</span>分</div>
+        <div id="local_gameOver"></div>
+    </div>
+</div>
+
+
+
+<script src="js/square.js"></script>
+<script src="js/squareFactory.js"></script>
+<script src="js/game.js"></script>
+<script src="js/local.js"></script>
+<script src="js/script.js"></script>
+<script>
+    /*$(function () {
+
+       for (var i=0;i<$(".current").length;i++){
+           this.r = Math.floor(Math.random()*255);
+           this.g = Math.floor(Math.random()*255);
+           this.b = Math.floor(Math.random()*255);
+           this.color = 'rgba('+ this.r +','+ this.g +','+ this.b +',0.8)';
+           $("#local_game .current").eq(i).css("background",this.color);
+           console.log(i);
+       }
+       console.log("$(.current).length"+$("#local_game .current").length)
+
+    });*/
+</script>
+</body>
+</html>

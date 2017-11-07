@@ -1,0 +1,131 @@
+.pppppp{
+    width: 850px;
+    position: relative;
+    float: left;
+    margin: 5% auto;
+    margin-bottom: 0px;
+    margin-left: 10%;
+}
+
+.double_talk{
+    margin: 11% auto;
+    margin-bottom: 0px;
+    width: 18%;
+    height:59%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    float: left;
+
+}
+
+
+.double_talk #double_console{
+    text-align: left;
+    width: 100%;
+    height: 90%;
+    display: block;
+    overflow-y: scroll;
+    word-wrap:break-word;
+    color: #538093;
+    font-size: 15px;
+    padding-left: 5px;
+
+}
+
+.double_talk .double_talk_content p{
+    margin-top: 15px;
+    margin-bottom: 1px;
+}
+
+.double_talk .double_talk_content p span{
+    color: #eaa142;
+    font-size: 20px;
+}
+.double_talk .double_talk_content p:nth-child(1){
+    margin-top: 0px;
+}
+.double_talk .double_talk_send{
+    width: 100%;
+    height: 10%;
+    position: relative;
+    border-top: 1px solid #ccc;
+}
+.double_talk .double_talk_send .input-talk-double{
+    width: 80%;
+    height:100%;
+    display: block;
+    position: absolute;
+    border-radius: 0px 0 0 10px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+}
+
+.double_talk .double_talk_send>button{
+    width: 20%;
+    height:100%;
+    display: block;
+    float: right;
+    border-radius:0 0 10px 0;
+    outline: none;
+    border: none;
+}
+
+
+
+.pppppp .square:nth-child(2){
+    margin-left:50px;
+}
+.square{
+    width: 400px;
+    height: 500px;
+    float: left;
+}
+
+.title{
+    font-size: 30px;
+    margin: 20px auto;
+    /*color: #8486ff;*/
+    /*-webkit-text-stroke-width:1px;
+    -webkit-text-stroke-color:#f13837;*/
+
+}
+.game{
+    width: 200px;
+    height: 400px;
+    background: #a1a0fe;
+    position: relative;
+    float: left;
+}
+.next{
+    position: relative;
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-left: 40px;
+    background: #a1a0fe;
+}
+.info{
+    float: left;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.none,.current,.done{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.none{
+    background-color: #a1a0fe;
+}
+.current{
+    background-color: #eaa142;
+    border: 1px solid #fffc05;
+}
+.done{
+    background-color: #fbb312;
+    border: 1px solid #fffacd;
+}

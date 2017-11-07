@@ -1,0 +1,1347 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+.btn.focus, .btn:focus{
+    color:#765e38;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url("../img/yun.png"), url("../img/logo.png");
+    background-color: #eaeaf1;
+    background-repeat: repeat-x, no-repeat;
+    background-position: bottom, top center;
+    font-family: "幼圆";
+    color: #765e38;
+    font-weight: bold;
+    width: 1349px;
+    height: 100%;
+
+}
+
+.page-container {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+
+}
+
+.box {
+    position: absolute;
+    width: 1349px;
+    height: 100%;
+    display: none;
+
+
+}
+
+.playGame {
+    position: absolute;
+    display: none;
+    /*width: 100%;
+    height: 100%;*/
+    width: 1349px;
+    height:100%;
+}
+
+.page-container .loginMsg {
+    position: relative;
+    margin: 150px auto;
+    margin-bottom: 0px;
+    width: 500px;
+    height: 300px;
+
+}
+
+.page-container .loginMsg input {
+    position: absolute;
+    display: block;
+    border-radius: 10px;
+    width: 210px;
+    height: 40px;
+    outline: none;
+    margin: 45px 27%;
+    border: 1px solid #0e90d2;
+    padding: 6px;
+}
+
+.page-container .loginMsg input:nth-child(2) {
+    margin: 110px 27%;
+}
+
+/* .page-container .loginMsg .checkCode {
+     width: 210px;
+     height: 40px;
+     position: absolute;
+     left: 136px;
+     margin-top: 170px;
+ }
+
+ .page-container .loginMsg .checkCode > input {
+     width: 100px;
+     height: 40px;
+     position: absolute;
+     margin-top: 0px;
+     margin-left: 0px;
+     padding-left: 5px;
+ }
+
+ .page-container .loginMsg .checkCode > span {
+     width: 108px;
+     height: 40px;
+     display: block;
+     line-height: 40px;
+     text-align: center;
+     margin-left: 100px;
+ }*/
+
+.page-container .loginMsg button {
+
+    left: 136px;
+    width: 100px;
+    padding: 6px 9px;
+    position: relative;
+    margin-top: 180px;
+    background: #a1a0fe;
+    font-size: 18px;
+    color: #0e0e0e;
+
+}
+
+.page-container .loginMsg button:nth-child(2) {
+    margin-left: 30%;
+}
+
+.box .boxTop {
+    position: relative;
+    width: 100%;
+    height: 25%;
+    padding-top: 15px;
+}
+
+.box .boxTop > p {
+    background: url("../img/myQ1.png") no-repeat;
+    -webkit-background-size: 100px;
+    background-size: 100px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 150px;
+    margin-left: 80px;
+    cursor: pointer;
+
+}
+
+.box .boxCenter {
+    position: relative;
+    width: 100%;
+    height: 60%;
+}
+
+.box .boxBottom {
+    position: relative;
+    width: 100%;
+    height: 15%;
+}
+
+h1 {
+    font-size: 45px;
+    color: #0e0e0e;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.box > span {
+    display: none;
+    margin-left: 100px;
+    position: absolute;
+}
+
+.left {
+    width: 75%;
+    height: 100%;
+    float: left;
+
+}
+
+.left .userList {
+    overflow-y: scroll;
+    margin-left: 80px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 200px;
+    max-height: 350px;
+    float: left;
+
+}
+
+.left .userList .userList_p {
+    font-size: 25px;
+    font-weight: bolder;
+    width: 200px;
+    position: absolute;
+    top: -35px;
+    margin: 0px auto;
+}
+
+.left .userList ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+
+.left .userList ul > li {
+    font-size: 18px;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px #ccc dashed;
+}
+
+.left .userList ul > li:last-child {
+    margin-bottom: 0px;
+}
+
+.left .roomList {
+    border: 1px solid #CCCCCC;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    width: 50%;
+    max-height: 350px;
+    float: left;
+    background: #fff;
+    overflow-y: scroll;
+}
+
+.left .roomList ul {
+    width: 100%;
+    list-style: none;
+}
+
+.left .roomList_p {
+    float: left;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 10px;
+    margin: 0 30px 0 80px;
+}
+
+.left .roomList ul > li {
+    padding-left: 20px;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px dotted #CCCCCC;
+}
+
+.left .roomList ul > li > a {
+    width: 30%;
+    height: 100%;
+    float: right;
+    text-align: center;
+    background: #ccc;
+    border: none;
+    outline: none;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*.left .roomList ul>li:nth-child(1)>a{*/
+/*border-radius: 0 10px 0 0;*/
+/*}*/
+.left .roomList ul > li > a:hover {
+    background: #717171;
+    color: #fff;
+}
+
+.center {
+    width: 25%;
+    height: 100%;
+    float: left;
+    background-size: contain;
+    padding-right: 5%;
+}
+
+.center .talk {
+    width: 100%;
+    height: 90%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.center .talk #console {
+    text-align: left;
+    width: 100%;
+    height: 90%;
+    display: block;
+    overflow-y: scroll;
+    word-wrap: break-word;
+    color: #538093;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 5px;
+
+}
+
+.center .talk .talk_content p {
+    margin-top: 15px;
+    margin-bottom: 1px;
+}
+
+.center .talk .talk_content p span {
+    color: #eaa142;
+    font-size: 18px;
+}
+
+.center .talk .talk_content p:nth-child(1) {
+    margin-top: 0px;
+}
+
+.center .talk .user_talk {
+    width: 100%;
+    height: 10%;
+    position: relative;
+    border-top: 1px solid #ccc;
+}
+
+.center .talk .user_talk .input-talk {
+    width: 80%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+}
+
+.center .talk .user_talk > button {
+    width: 20%;
+    height: 100%;
+    display: block;
+    float: right;
+    border-radius: 0 0 10px 0;
+    outline: none;
+    border: none;
+}
+
+.right {
+    width: 100%;
+    height: 100%;
+
+}
+
+.right button {
+
+    margin-left: 20%;
+    margin-top: 10px;
+    width: 115px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.right button:hover {
+    background: #717171;
+    color: #fff;
+}
+
+#myLevelList {
+
+    margin-bottom: 0px;
+
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#myLevelList .modal-body {
+    width: 700px;
+    height: 450px;
+    background: #a1a0fe url("../img/yun.png") no-repeat;
+    background-size: cover;
+    border-top: none;
+    padding: 0px;
+    border-bottom: 0px;
+    border-radius: 12px;
+}
+
+#myLevelList .modal-body .tab-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#myLevelList .modal-content {
+    background: none;
+    margin-top: 50px;
+    box-shadow: none;
+    border: none;
+}
+
+#myLevelList .modal-body .tab-content .tab-content-top {
+    width: 100%;
+    height: 60px;
+}
+
+#myLevelList .modal-body .tab-content .tab-content-top > p {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    letter-spacing: 50px;
+    padding-left: 180px;
+    font-family: "Calisto MT";
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #eaa142;
+}
+
+#myLevelList .tab-content-center {
+    position: relative;
+    width: 100%;
+    height: 400px;
+
+}
+
+#myLevelList
+.tab-content-center
+.tab-content-center-left {
+    width: 25%;
+    height: 100%;
+    position: absolute;
+}
+
+#myLevelList
+.tab-content-center
+.tab-content-center-left > button {
+    font-size: 22px;
+    font-weight: bold;
+    color: #765e38;
+    background: #b2b2fa;
+    color: white;
+    margin-left: 37px;
+    margin-top: 20px;
+}
+
+#myLevelList
+.tab-content-center
+.tab-content-center-left > button:nth-child(1) {
+    background: #eaa142;
+
+}
+
+#myLevelList
+.tab-content-center
+.tab-content-center-right {
+    width: 75%;
+    height: 100%;
+    margin-left: 25%;
+    position: absolute;
+
+}
+
+#myLevelList
+.tab-content-center
+.tab-content-center-right
+.tab-content-center-right-top {
+    width: 100%;
+    height: 350px;
+
+}
+
+#myLevelList
+.tab-content-center
+.tab-content-center-right
+.tab-content-center-right-top > ul {
+    height: 100%;
+    width: 96%;
+    margin-top: 0px;
+    border-radius: 10px;
+    overflow-y: scroll;
+   /* border: 1px solid #ccc;*/
+    /*padding-left: 18px;*/
+
+}
+
+#myLevelList
+.tab-content-center
+.tab-content-center-right
+.tab-content-center-right-top > ul > li {
+    width: 100%;
+    height: 75px;
+    list-style: none;
+    margin-top: 18px;
+    background: #c0c0f8;
+    border-radius: 5px;
+    padding-top: 15px;
+
+}
+
+#myLevelList
+.tab-content-center
+.tab-content-center-right
+.tab-content-center-right-top > ul > li:nth-child(1) {
+    margin-top: 0;
+}
+
+#myLevelList
+.tab-content-center
+.tab-content-center-right
+.tab-content-center-right-top > ul > li>.myLevelLiTop{
+    height: 25px;
+    width: 100%;
+}
+
+#myLevelList
+.tab-content-center
+.tab-content-center-right
+.tab-content-center-right-top > ul > li>.myLevelLiTop>span{
+    width: 125px;
+    height: 100%;
+    line-height: 25px;
+    display: inline-block;
+}
+
+#myLevelList
+.tab-content-center
+.tab-content-center-right
+.tab-content-center-right-top > ul > li>.myLevelLiTop>span:nth-child(1){
+    margin-left: 16px;
+    width: 190px;
+}
+
+#myLevelList
+.tab-content-center
+.tab-content-center-right
+.tab-content-center-right-top > ul > li>.myLevelLiTop>span:nth-child(3)>span:nth-child(2){
+    color: rgb(21, 28, 255);
+    font-size: 20px;
+    padding-left: 5px;
+    font-family: 等线;
+}
+
+#myLevelList
+.tab-content-center
+.tab-content-center-right
+.tab-content-center-right-top > ul > li>.myLevelLiTop>span:nth-child(2)>span:nth-child(2){
+    color: #eaa142;
+    font-size: 18px;
+
+}
+#myLevelList
+.tab-content-center
+.tab-content-center-right
+.tab-content-center-right-top > ul > li>.myLevelLiTop>span>span:nth-child(1){
+    font-size: 15px;
+}
+#myLevelList
+.tab-content-center
+.tab-content-center-right
+.tab-content-center-right-top > ul > li>.myLevelLiTop>span>span:nth-child(2){
+    color: white;
+    font-size: 17px;
+}
+/*#myLevelList
+.tab-content-center
+.tab-content-center-right
+.tab-content-center-right-top > ul > li>span {
+
+    width: 100px;
+    height:25px;
+    line-height: 25px;
+    display: inline-block;
+    background: yellow;
+}
+
+#myLevelList
+.tab-content-center
+.tab-content-center-right
+.tab-content-center-right-top > ul > li>span:nth-child(1) {
+    margin-left: 15px;
+    width: 180px;
+}
+
+#myLevelList
+.tab-content-center
+.tab-content-center-right
+.tab-content-center-right-top > ul > li>span:nth-child(1)>span:nth-child(1){
+    color:white;
+    display: block;
+    background: blueviolet;
+    width: 100px;
+}*/
+
+#myLevelList
+.tab-content-center
+.tab-content-center-right
+.tab-content-center-right-top > ul > li .wrapper {
+    background: white;
+    width: 92%;
+    margin-top: 5px;
+    margin-left: 15px;
+    border-radius: 5px;
+    height: 15px;
+}
+
+#myLevelList
+.tab-content-center
+.tab-content-center-right
+.tab-content-center-right-top > ul > li .progressbar {
+    top: 1px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: white;
+
+}
+
+/*在进度条元素上调用动画*/
+#myLevelList
+.tab-content-center
+.tab-content-center-right
+.tab-content-center-right-top > ul > li .fill {
+    text-align: center;
+    border-radius: 5px;
+    background-color: #eaa142;
+    /*  background: url("img/pro.png");
+      background-size: contain;*/
+    height: 100%;
+    width: 100px;
+    animation: barberpole 1s linear;
+
+}
+
+/* .bar.mint {
+     background-color: #c0c0f8;
+    !* background-image: repeating-linear-gradient(-45deg, #145de4, #145de4 15px, #f0a3d1 15px, #f0a3d1 30px);*!
+     background-size: 300px 100%;
+     animation: barberpole 2s linear;
+    !* border-bottom: 0.2rem solid #0d7e68;*!
+ }
+*/
+@keyframes barberpole {
+    from {
+        width: 0px;
+        background-position: 0% 0%;
+    }
+
+    to {
+
+        /*background-position: 300px 0%;*/
+    }
+}
+
+#myLevelList
+.tab-content-center
+.tab-content-center-right
+.tab-content-center-right-bottom {
+    width: 100%;
+    height: 50px;
+    position: relative;
+
+}
+
+#myLevelList
+.tab-content-center
+.tab-content-center-right
+.tab-content-center-right-bottom > p {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+
+}
+
+#myLevelList .modal-footer {
+    border-top: 0px;
+}
+
+#myModal .modal-content {
+    width: 500px;
+    height: 300px;
+    margin: 100px auto;
+    background: #a1a0fe url("../img/yun.png") no-repeat center;
+}
+
+#myModal .modal-content .modal-body {
+    position: relative;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+#myModal .modal-content .modal-body > div {
+    margin-left: 130px;
+    margin-top: 25px;
+    width: 280px;
+    height: 60px;
+    line-height: 35px;
+    letter-spacing: 73px;
+    font-size: 17px;
+}
+
+#myModal .modal-content .modal-body > input {
+    margin-top: 45px;
+    width: 57%;
+    margin-left: 100px;
+    display: block;
+    height: 38px;
+    padding-left: 15px;
+    border: 1px solid #CCCCCC;
+    outline: none;
+    border-radius: 5px;
+
+}
+
+#myModal .modal-content .modal-body input[type='range'] {
+    display: block;
+    width: 200px;
+    outline: none;
+    background: skyblue;
+    padding-left: 0px;
+    position: fixed;
+    margin-top: -13px;
+    z-index: 999;
+}
+
+/* input[type="range"]::-webkit-slider-thumb {
+     !*::-webkit-slider-thumb是代表给滑块的样式进行变更*!
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none; !*!/这三个是去掉滑块原有的默认样式，划重点！！*!
+     -webkit-box-shadow:0 0 2px ; !*设置滑块的阴影*!
+     width: 10px;
+     height:10px;
+     background-size: 10px 10px;
+     border-radius: 10px;
+     !*!/这几个是设置滑块的样式*!
+ }*/
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    cursor: default;
+    top: 15px;
+    height: 36px;
+    width: 36px;
+    background: #8b92ff;
+    border-radius: 19px;
+
+}
+
+#myModal .modal-content .modal-footer {
+    border-top: none;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#myModal .modal-content .modal-footer > button {
+    width: 100px;
+    height: 50px;
+    font-weight: bolder;
+    background: #a1a0fe;
+    color: #fff;
+}
+
+#myModal .modal-content .modal-footer > button:nth-child(1) {
+    margin-right: 20px;
+}
+
+/* #goIndex{
+     display: block;
+     border: none;
+     box-shadow: none;
+
+ }*/
+#goIndex .modal-content {
+    background: url("../img/goIndex.png") no-repeat;
+    background-size: contain;
+    color: white;
+    width: 600px;
+    margin-top: 100px;
+    height: 350px;
+}
+
+.modal-content {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.modal-content {
+    position: relative;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#victory_defeat #myQ {
+    position: absolute;
+    margin-left: 480px;
+    width: 65px;
+    height: 95px;
+    animation: moveVictory 1s ease 1s infinite alternate;
+
+    /*  margin-top: 265px;
+      margin-left: 390px;
+      animation-name: moveDefeat,movebackDefeat;
+
+      //属性定义动画完成一个周期所需要的时间，以秒或毫秒计。
+      animation-duration:2s, 0s;
+      //规定动画的速度曲线。linear动画从头到尾的速度是相同的。
+      animation-timing-function:linear,linear ;
+      //属性定义动画何时开始
+      animation-delay:0s,2s;
+      //定义动画的播放次数
+      animation-iteration-count:2, 1;
+      //规定动画在播放之前或之后，其动画效果是否可见,forwards当动画完成后，保持最后一个属性值（在最后一个关键帧中定义）。
+      animation-fill-mode:forwards ,both;
+      //定义是否应该轮流反向播放动画,alternate动画应该轮流反向播放
+      animation-direction:alternate, alternate;*/
+
+}
+
+@keyframes movebackDefeat {
+
+    100% {
+        transform: scaleX(-1);
+    }
+}
+
+@keyframes movebackDefeat1 {
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes moveDefeat {
+    0% {
+        margin-left: 390px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes moveVictory {
+    0% {
+        margin-top: 50px;
+    }
+
+    50% {
+        margin-top: 100px;
+
+    }
+
+    100% {
+        margin-top: 0px;
+    }
+}
+
+.modal-content .modal-content-msg {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 80px;
+    width: 350px;
+    height: 250px;
+    text-align: left;
+    padding-left: 50px;
+    font-size: 25px;
+}
+
+.modal-content .modal-content-msg p {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+}
+
+#goIndex .modal-content #btnGoIndex {
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-top: 265px;
+    margin-left: 505px;
+}
+
+#myLevelList
+.tab-content-center
+.tab-content-center-right
+.tab-content-center-right-top #userActive {
+    display: none;
+
+}
+
+#myLevelList
+.tab-content-center
+.tab-content-center-right
+.tab-content-center-right-top #userActive > li {
+    height: 75px;
+    line-height: 75px;
+    padding-top: 0px;
+    text-align: center;
+}
+
+#myLevelList
+.tab-content-center
+.tab-content-center-right
+.tab-content-center-right-top #userActive > li > span {
+    width: 200px;
+    height: 75px;
+    display: inline-block;
+    text-align: left;
+}
+
+#myLevelList
+.tab-content-center
+.tab-content-center-right
+.tab-content-center-right-top #userActive > li >span> span:nth-child(1){
+    font-size: 16px;
+}
+
+#myLevelList
+.tab-content-center
+.tab-content-center-right
+.tab-content-center-right-top #userActive > li > span:nth-child(1)>span:nth-child(2){
+    color: white;
+    font-size: 17px;
+}
+
+#myLevelList
+.tab-content-center
+.tab-content-center-right
+.tab-content-center-right-top #userActive > li > span:nth-child(2)>span:nth-child(2){
+    font-size: 20px;
+    color: #2a2dff;
+}
+
+/*  #waiting {
+      display: block;
+
+  }*/
+
+#waiting .modal-content {
+    background: url("../img/waiting.gif") no-repeat;
+    width: 700px;
+    background-size: 100%;
+    background-position: 0px -100px;
+    color: white;
+    margin-top: 100px;
+    height: 350px;
+}
+
+#waiting .modal-content > p {
+    text-align: center;
+    font-size: 45px;
+}
+
+#waiting .modal-content > img {
+    margin-top: 210px;
+    margin-left: 630px;
+    width: 60px;
+    height: 60px;
+}
+
+/*  #waiting .modal-content button{
+      width: 100px;
+      height: 50px;
+      font-weight: bolder;
+      background: #a1a0fe;
+  }
+  #waiting .modal-content button:hover{
+      color: #fff1f8;
+      background: #9392ea;
+  }*/
+
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+    outline: none;
+    border-color: transparent;
+}
+
+/*   #userMsg{
+          display: block;
+   }*/
+
+#userMsg .modal-content .modal-dialog {
+    width: 700px;
+    background: yellow
+}
+
+#userMsg .modal-content {
+    margin-left: 20px;
+    width: 700px;
+    height: 300px;
+    top: 50px;
+    background: #a1a0fe url("../img/yun.png") no-repeat;
+    background-position: bottom left;
+}
+
+#userMsg .modal-content .userMsgLeft {
+    width: 145px;
+    height: 300px;
+    position: absolute;
+}
+
+#userMsg .modal-content .userMsgLeft button {
+    margin-top: 35px;
+    margin-left: 15px;
+    color: white;
+    background: #eaa142;
+    font-weight: bold;
+}
+
+#userMsg .modal-content .userMsgLeft button:nth-child(2),
+#userMsg .modal-content .userMsgLeft button:nth-child(3) {
+    background: #b2b2fa;
+}
+
+#userMsg .modal-content .userMsgRight {
+    width: 540px;
+    height: 300px;
+    margin-left: 150px;
+    position: relative;
+}
+
+#userMsg .modal-content .userMsgRight #historicalRecord {
+    display: none;
+}
+
+#userMsg .modal-content .userMsgRight #historicalRecord {
+
+    list-style: none;
+    width: 100%;
+    position: absolute;
+    margin-top: 6px;
+    height: 95%;
+    overflow-y: scroll;
+}
+
+#userMsg .modal-content .userMsgRight #historicalRecord li {
+    height: 45px;
+    line-height: 70px;
+    padding-left: 10px;
+    width: 95%;
+    margin-top: 10px;
+    margin-left: 20px;
+    background: #c0c0f8;
+    border-radius: 5px;
+    font-weight: normal;
+   /* font-size: 18px;*/
+
+}
+
+#userMsg .modal-content .userMsgRight #historicalRecord li>span:nth-child(1){
+    display: block;
+    width: 245px;
+    height:100%;
+    float: left;
+    padding-top: 0px;
+    line-height: 45px;
+    text-align: left;
+
+}
+#userMsg .modal-content .userMsgRight #historicalRecord li>span:nth-child(1)>span:nth-child(1),
+#userMsg .modal-content .userMsgRight #historicalRecord li>span:nth-child(2)>span:nth-child(1),
+#userMsg .modal-content .userMsgRight #historicalRecord li>span:nth-child(3)>span:nth-child(1){
+    color: #1562d2;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+#userMsg .modal-content .userMsgRight #historicalRecord li>span:nth-child(1)>span:nth-child(2),
+#userMsg .modal-content .userMsgRight #historicalRecord li>span:nth-child(2)>span:nth-child(2),
+#userMsg .modal-content .userMsgRight #historicalRecord li>span:nth-child(3)>span:nth-child(2){
+    font-size: 15px;
+    color: #ffeff2;
+}
+
+#userMsg .modal-content .userMsgRight #historicalRecord li>span:nth-child(2){
+    width: 170px;
+    height:100%;
+    float: left;
+    line-height: 45px;
+    text-align: left;
+}
+
+#userMsg .modal-content .userMsgRight #historicalRecord li>span>p{
+    width: 100px;
+    height: 100%;
+}
+
+#userMsg .modal-content .userMsgRight #historicalRecord li>span:nth-child(3){
+    width: 85px;
+    height:100%;
+    float: left;
+    line-height: 45px;
+    text-align: left;
+
+}
+
+
+#userMsg .modal-content .userMsgRight #historicalRecord li:nth-child(1) {
+    top: 20px;
+}
+
+#userMsg .modal-content .userMsgRight #userMsgRightMsg {
+    width: 500px;
+    height: 220px;
+}
+
+#userMsg .modal-content .userMsgRight table {
+    width: 500px;
+    height: 220px;
+    margin: 30px auto;
+    top: 30px;
+    position: relative;
+    text-align: center;
+    border: 1px solid #37770b;
+}
+
+#userMsg
+.modal-content
+.userMsgRight
+#userMsgRightChangePwd {
+    width: 540px;
+    height: 300px;
+    display: none;
+    position: relative;
+    padding-top: 20px;
+}
+
+#userMsg
+.modal-content
+.userMsgRight
+#userMsgRightChangePwd li {
+    height: 35px;
+    width: 100%;
+    margin-top: 15px;
+    list-style: none;
+}
+
+#userMsg
+.modal-content
+.userMsgRight
+#userMsgRightChangePwd li input {
+    width: 220px;
+    margin-left: 155px;
+    height: 35px;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 5px;
+    border: 1px solid #239dd2;
+}
+
+#userMsg
+.modal-content
+.userMsgRight
+#userMsgRightChangePwd li span {
+    font-size: 10px;
+    color: red;
+    visibility: hidden;
+}
+
+#userMsg
+.modal-content
+.userMsgRight
+#userMsgRightChangePwd li button {
+    width: 100px;
+    margin-left: 155px;
+    height: 35px;
+    outline: none;
+    border-radius: 5px;
+    padding: 0px;
+    background: #c0c0f8;
+    font-size: 20px;
+    color: #0e0e0e;
+}
+
+#userMsg
+.modal-content
+.userMsgRight
+#userMsgRightChangePwd li button:nth-child(2) {
+    margin-left: 10px;
+}
+
+/*  #userMsg .modal-content .userMsgRight table tbody {
+
+      border-radius: 15px;
+      margin-top: 25px;
+      font-size: 18px;
+  }*/
+
+#userMsg .modal-content .userMsgRight table tbody > tr {
+    padding: 0px;
+
+}
+
+#userMsg .modal-content .userMsgRight table tbody > tr > td:nth-child(1),
+#userMsg .modal-content .userMsgRight table tbody > tr:nth-child(2) > td:nth-child(3),
+#userMsg .modal-content .userMsgRight table tbody > tr:nth-child(4) > td:nth-child(3) {
+    background: #d1ee31;
+}
+
+#userMsg .modal-content .userMsgRight table tbody > tr td {
+    background: #cecef7;
+    width: 100px;
+    cursor: pointer;
+}
+
+/*#reg{
+    display: block;
+}*/
+
+#reg .modal-content {
+    height: 300px;
+    margin-top: 100px;
+    background: #239dd2 url("../img/yun.png");
+    position: relative;
+}
+
+#reg .modal-content ul {
+    height: 300px;
+    width: 600px;
+
+    padding-top: 20px;
+}
+
+#reg .modal-content ul li {
+    height: 35px;
+    width: 100%;
+    margin-top: 20px;
+
+}
+#reg .modal-content ul li:last-child{
+    height: 40px;
+}
+
+#reg .modal-content ul li > input {
+    width: 230px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-left: 180px;
+    padding-left: 5px;
+}
+
+#reg .modal-content ul li > #regCheckNumber {
+    width: 100px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-left: 180px;
+    padding-left: 5px;
+}
+
+#reg .modal-content ul li > img {
+    width: 100px;
+    height: 35px;
+}
+
+#reg .modal-content ul li > button {
+    height: 40px;
+    width: 100px;
+    padding: 0px;
+    margin-left: 180px;
+    font-size: 18px;
+    background: #a1a0fe;
+    color: black;
+}
+
+#reg .modal-content ul li > button:nth-child(2) {
+    margin-left: 30px;
+}
+
+#reg .modal-content ul li>span{
+    visibility: hidden;
+
+    color: #ff585a;
+}
+
+/* #reg .modal-content > input {
+     width: 230px;
+     height: 35px;
+     outline: none;
+     border: none;
+     border-radius: 5px;
+     display: block;
+     margin-top: 45px;
+     margin-left: 200px;
+     position: absolute;
+     padding-left: 5px;
+ }
+
+ #reg .modal-content > input:nth-child(2) {
+     margin-top: 100px;
+
+ }
+
+ #reg .modal-content > button {
+     position: absolute;
+     margin-top: 195px;
+     width: 100px;
+     height: 45px;
+     margin-left: 200px;
+     background: #a1a0fe;
+     font-size: 18px;
+     color: black;
+ }
+
+ #reg .regCheck {
+     width: 230px;
+     height: 35px;
+     position: absolute;
+     margin-top: 150px;
+     margin-left: 200px;
+ }
+
+ #reg .regCheck input {
+     width: 120px;
+     height: 35px;
+     outline: none;
+     border: none;
+     border-radius: 5px;
+     border: 1px solid #0e90d2;
+     padding-left: 5px;
+ }
+
+ #reg .regCheck img {
+     width: 100px;
+     height: 35px;
+
+ }
+
+ #reg .modal-content > #btnreg {
+     margin-left: 320px;
+ }*/
+/*#userMsg .modal-content p:nth-child(2){
+    padding-left: 20px;
+    background: skyblue;
+}*/
+::-webkit-scrollbar {
+    width: 0px;
+}
